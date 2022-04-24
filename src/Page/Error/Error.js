@@ -15,7 +15,7 @@ const Error = () => {
         </div>
         <div className="w-8/12 h-1 bg-line m-2 2md:m-4 lg:m-5"></div>
         <div className="text-lg 2md:text-2xl lg:text-3xl">
-          ไม่พบหน้าที่คุณค้นหา
+          ไม่พบหน้าที่คุณต้องการค้นหา
         </div>
         <Link
           className="flex-con-col text-sm bg-[#007cff] text-line w-28 h-9 border-none mt-5 duration-75 rounded-md 
