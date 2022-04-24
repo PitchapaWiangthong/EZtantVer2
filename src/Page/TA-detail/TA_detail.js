@@ -1,6 +1,6 @@
-import ProfileCard from "./component/profile-card";
+import Profile_Card from "./component/profile-card";
 import Comment_Input from "./component/comment-input";
-import CommentCard from "./component/comment-card";
+import Comment_Card from "./component/comment-card";
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 
@@ -26,7 +26,7 @@ const TA_detail = () => {
     <>
       <div className="h-[80px] w-full bg-line"></div>
       <div className="flex-con-col w-full 2md:flex-con-row">
-        <ProfileCard data={initdata} />
+        <Profile_Card data={initdata} />
         <div className="mb-20 2md:flex 2md:flex-col 2md:ml-10 lg:ml-20 xl:ml-40">
           <Comment_Input data={initdata} onAddItem={onAddNewItem} />
           <div className="flex flex-col items-start w-[360px] lg:w-[400px] xl:w-[500px]">
@@ -35,7 +35,7 @@ const TA_detail = () => {
             </div>
             <div className="h-0.5 w-full bg-line my-3"></div>
             {item.map((comment) => (
-              <CommentCard
+              <Comment_Card
                 data_user={user}
                 data_comment={comment}
                 key={uuidv4()}
