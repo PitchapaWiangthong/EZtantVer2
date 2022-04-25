@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const HistoryWorked = (props) => {
   const { data } = props;
@@ -31,7 +32,7 @@ const HistoryWorked = (props) => {
         {open && (
           <>
             {data.map((subject) => (
-              <div className="mt-6 ml-4 font-medium break-all">{subject}</div>
+              <div className="mt-6 ml-4 font-medium break-all" key={uuidv4()}>{subject}</div>
             ))}
           </>
         )}

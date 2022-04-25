@@ -7,7 +7,7 @@ const ProfileCard = (props) => {
     <>
     <div className="relative flex-con-row border-line border-solid border-2 w-[360px] h-[120px] rounded-md mt-[50px] 2md:self-start 2md:flex-con-col 2md:h-[250px] lg:h-[300px]">
         <img
-          className="w-[70px] h-[70px] rounded-full shrink-0 m-3 2md:w-[110px] 2md:h-[110px]"
+          className="w-[70px] h-[70px] object-cover rounded-full shrink-0 m-3 2md:w-[110px] 2md:h-[110px]"
           src={data.pic}
           alt="profile"
         ></img>
